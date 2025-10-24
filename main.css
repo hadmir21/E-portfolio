@@ -1,14 +1,19 @@
 body {
     margin: 0rem;
-    background-color: lightcyan;
+    background-color: rgb(255, 255, 255);
  }
 
 #mainlinks {
+    z-index: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
-    background-color: steelblue;
+    background-color: rgb(78, 127, 167);
+}
+
+#mainlinks * {
+    text-align: center;
 }
 
 .toplinks {
@@ -18,8 +23,8 @@ body {
     text-decoration:none;
     font-size: 1.63rem;
     padding: 0.3rem;
-    color:brown;
-    background-color: skyblue;
+    color:rgb(255, 255, 255);
+    background-color: rgb(151, 205, 226);
     border-radius: 0.5rem;
     font-weight: 550;
     margin: 0.25rem;
@@ -27,9 +32,11 @@ body {
 }
 
 .toplinks:hover{
-    color:firebrick;
-    background-color: lightgreen;
     font-weight: bold;
+}
+
+#titlelink{
+    background-color: rgba(11, 169, 231, 0.986);
 }
 
 section {
@@ -50,6 +57,39 @@ section {
     margin-top: 0.5rem;
     background-color: blanchedalmond;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:absolute;
+    bottom: 0rem;
+    background-color: rgb(78, 127, 167);
+    width: 100%;
+  }
+
+  footer:first-child {
+    display: flexbox;
+    align-items: center;
+    block-size: max-content;
+    font-size: 1.63rem;
+    padding: 0.3rem;
+  }
+
+  .bottomlinks{
+    text-decoration:none;
+    display: flexbox;
+    block-size: max-content ;
+    color:rgb(255, 255, 255);
+    background-color: rgb(151, 205, 226);
+    border-radius: 0.25rem;
+    font-weight: 550;
+    margin: 0.25rem;
+
+  }
+
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
 	#mainlinks {
