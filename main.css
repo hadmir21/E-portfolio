@@ -3,6 +3,7 @@ body {
     background-color: rgb(255, 255, 255);
  }
 
+
 #mainlinks {
     z-index: auto;
     display: flex;
@@ -93,21 +94,42 @@ section{
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 1rem;
+    margin: 5rem;
     flex-direction: column;
 }
 
 section div{
-    display: flexbox;
-    block-size: max-content;
+    
 }
 
+.figure img{
+    width: 100%;
+    height: auto;
+  }
 
+#LinkedIn{
+    background-image: url('LinkedIn.png');
+    display: flexbox;
+    block-size: max-content;
+    margin:2rem;
+}
 
+#elevatorpitch {
+    block-size: max-content;
+    margin:2rem;
+}
+
+#Cv{
+    flex-direction: row;
+}
+
+#CV div {
+    block-size: max-content;
+    margin:2rem;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
 	#mainlinks {
 		flex-direction: column;
 	}
 }
-/* 
