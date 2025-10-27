@@ -62,7 +62,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position:absolute;
+    position:fixed;
     bottom: 0rem;
     background-color: rgb(78, 127, 167);
     width: 100%;
@@ -87,6 +87,20 @@ footer {
     margin: 0.25rem;
 
   }
+
+
+section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+section div{
+    display: flexbox;
+    block-size: max-content;
+}
 
 
 
