@@ -11,6 +11,19 @@ body {
     background-color:var(--blueback);
  }
 
+ section{
+    margin-top:1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+section div{   
+    block-size: max-content;
+    margin-bottom: 1.5rem;
+}
 
 #mainlinks {
     display: flex;
@@ -47,25 +60,21 @@ body {
 }
 
 
+
+
 .profilepicture {
-    display: flex;
+    margin: 4rem;
     border-radius: 10rem;
-    width: 15rem
+    width: 100%;
 }
 
-.mediablock {
-    display: flexbox;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 0.5rem;
-    background-color: blanchedalmond;
-}
 
 footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position:fixed;
+    flex-direction: row;
     bottom: 0rem;
     background-color: rgb(78, 127, 167);
     width: 100%;
@@ -79,43 +88,45 @@ footer {
     padding: 0.3rem;
   }
 
+ .credits{
+    color: white;
+  }
+
+  .bottomlogo{
+    width: 1.63rem;
+    background-color:white;
+    border-radius: 0.15rem;
+    vertical-align: middle;
+  }
+
   .bottomlinks{
     text-decoration:none;
-    display: flexbox;
     block-size: max-content ;
     color:rgb(255, 255, 255);
     background-color: rgb(151, 205, 226);
     border-radius: 0.25rem;
     font-weight: 550;
-    margin: 0.25rem;
+    padding: 0.25rem;
 
   }
 
+  .bottomlinks:hover{
+    font-weight: bold;
+  }
 
-section{
-    margin-top:1.5rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin-bottom: 3rem;
-}
 
-section div{
-    block-size: max-content;
-    margin-bottom: 1.5rem;}
 
 .flexhorizontal{
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
     margin: 1.5rem;
 } 
 
 
 
 .previewpicture{
-    margin: 1.5rem auto;
+    margin: 1.5rem 3rem;
     border-radius: 3rem;
     background-color: rgb(247, 247, 247);
   }
@@ -133,7 +144,7 @@ section div{
     background-color: rgb(78, 127, 167);
     border-radius: 0.5rem;
     font-weight: 550;
-    margin: 0.25rem
+    margin: 0.25rem;
 }
 
 .sectionlinks:hover{
@@ -151,12 +162,24 @@ section div{
     
 }
 
+#Linkedinlogo:hover{
+    opacity: 75%;
+    width: 32%;
+
+}
+
 #Linkedinlogo{
-    background-color: aquamarine;
+    border-radius: 2rem;
+    padding:1rem;
+    width: 30%;
+    background-color: var(--blue2);
 }
 
 #elevatorpitch {
+    display: flex;
     block-size: max-content;
+    align-items: center;
+    flex-direction: column;
     margin:2rem;
 }
 
@@ -180,7 +203,7 @@ article h2{
 }
 
 .longtext{
-    max-width: 60ch;
+    max-width: 55ch;
 }
 
 .longtext p {
@@ -193,14 +216,16 @@ article h2{
 }
 
 .quicktext{
-    max-width: 65ch;
+    max-width: 60ch;
     justify-content: center;
 }
 
-.quicktext p{
+.quicktext *{
     text-align: center;
 
 }
+
+
 
 
 
@@ -208,6 +233,10 @@ article h2{
 	#mainlinks {
 		flex-direction: column;
 	}
+     
+    .flexhorizontal{
+        flex-wrap: wrap;
+    }
 
 }
 
